@@ -395,7 +395,7 @@ StrategyGetBuffer(BufferAccessStrategy strategy, uint32 *buf_state, bool *from_r
 	 * 5. RETRY: If no candidates are found (all buffers are pinned), retry
 	 *    the entire scan. Allow up to 10 rounds of retries. If after 10
 	 *    rounds no buffer is available, abort:
-	 *      elog(ERROR, "4707: no buffers available");
+	 *      elog(ERROR, "5708: no buffers available");
 	 *
 	 * Remove the placeholder elog below and replace it with your
 	 * implementation.

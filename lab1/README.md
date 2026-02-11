@@ -113,7 +113,7 @@ A(2), E(6), C(4), D(5)
 3. **Edge cases:**
    - If there is **exactly 1** candidate, evict it (there is no "second").
    - If there are **0** candidates, retry the scan. You may retry up to **10 rounds**.
-   - After 10 failed rounds, abort with: `elog(ERROR, "4707: no buffers available");`
+   - After 10 failed rounds, abort with: `elog(ERROR, "5708: no buffers available");`
 
 4. **Logging (required for grading):** See [Section 4: Output Format Specification](#4-output-format-specification-important) for the **exact** `printf` format you must use. Your output will be parsed by an automated autograder.
 
