@@ -374,7 +374,7 @@ Inside `StrategyGetBuffer()`, after the freelist section, you will see a block m
    - **Print output using the EXACT format** specified in [Section 4](#4-output-format-specification-important). The exact `printf` snippets are provided in both Section 4 and in the template file — copy them verbatim.
    - Lock the chosen victim with `LockBufHdr()`, verify it's still unpinned, and return it.
    - Handle edge cases: 0 candidates (retry), 1 candidate (evict it), race conditions (buffer got pinned between scan and lock — retry).
-   - After 10 failed rounds, call `elog(ERROR, "4707: no buffers available");`.
+   - After 10 failed rounds, call `elog(ERROR, "5708: no buffers available");`.
 
 ### Template markers to look for
 
